@@ -8,9 +8,17 @@ class ChatMessage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      title: Text(data.author.toString()),
-      subtitle: Text(data.message.toString()),
+    return Card(
+      elevation: 6,
+      margin: EdgeInsets.all(10),
+      child: ListTile(
+        leading: CircleAvatar(
+          child: Text(data.author.name[0]),
+          backgroundColor: Colors.deepPurple,
+        ),
+        title: Text(data.author.name),
+        subtitle: Text(data.message.toString()),
+      ),
     );
   }
 }
