@@ -17,7 +17,7 @@ class ChatMessage extends StatelessWidget {
           backgroundColor: Colors.deepPurple,
         ),
         title: Text(data.author.name),
-        subtitle: Text(data.message.toString()),
+        subtitle: Text(data.message.toString())1,
       ),
     );
   }
