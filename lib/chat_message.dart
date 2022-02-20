@@ -13,7 +13,7 @@ class ChatMessage extends StatelessWidget {
       margin: EdgeInsets.all(10),
       child: ListTile(
         leading: CircleAvatar(
-          child: Text(data.author.name[0]),
+          child: Text(data.author.name[0], style: TextStyle(color: Colors.white),),
           backgroundColor: Colors.deepPurple,
         ),
         title: Text(data.author.name),

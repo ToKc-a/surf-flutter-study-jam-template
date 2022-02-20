@@ -36,3 +36,4 @@ Widget chatBottomAppBar() {
     ),
   );
 }
+
